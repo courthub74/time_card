@@ -1,0 +1,109 @@
+/* CSS Variables */
+
+/* The ROOT (for Day Mode) */
+:root {
+    --base-color: white;
+    --text-color: black;
+    --button-color: #181717;
+    --primary-color: #3a435d;
+}
+
+/* Darkmode (for Nite Mode) */
+.darkmode {
+    --base-color: #1E1E1E;
+    --text-color: white;
+    --button-color: #181717;
+    --primary-color: #3a435d;
+}
+
+/* Whole Page */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+
+    /* Nav */
+    #main_nav {
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #theme_switch {
+        margin: 0 2em 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* NOW set the order of the SVG */
+    #theme_switch svg {
+        fill: var(--primary-color);
+    }
+
+    /* Hide the SVG last child(day mode) */
+    #theme_switch svg:last-child {
+        display: none;
+    }
+
+    /* Invert this for (nite mode) */
+    .darkmode #theme_switch svg:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in (nitemode) */
+    .darkmode #theme_switch svg:last-child {
+        display: block;
+    }
+
+    /* ************************************* */
+    /* MAIN PAGE */
+    .container {
+        /* background-color: blue; */
+        font-family: Poppins;
+        /* width: 100%; */
+    }
+
+    /* Header */
+    .header {
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    /* App State */
+    .state {
+        background-color: var(--text-color);
+        /* Make text match the base */
+        color: var(--base-color);
+        text-align: center;
+        padding: .5em;
+        font-size: 1.2rem;
+    }
+}
+
