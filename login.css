@@ -13,7 +13,7 @@
     --base-color: #1E1E1E;
     --text-color: white;
     --button-color: #181717;
-    --primary-color: #3a435d;
+    --primary-color: #3a435d; 
 }
 
 /* Whole Page */
@@ -87,6 +87,9 @@ body {
         /* background-color: blue; */
         font-family: Poppins;
         /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
     }
 
     /* Header */
@@ -94,6 +97,7 @@ body {
         color: var(--text-color);
         font-weight: bold;
         font-size: 2.5rem;
+        text-align: center;
     }
 
     /* App State */
@@ -110,6 +114,13 @@ body {
     form {
         display: flex;
         flex-direction: column;
+        gap: 3em;
+        margin: 1em 0 0 0;
+    }
+
+    /* The Labels */
+    label {
+        font-size: 1rem;
     }
 
     /* Input Divs */
@@ -123,11 +134,32 @@ body {
         background-color: var(--base-color);
         border: var(--text-color) 2px solid;
         padding: 1em;
+        /* width: 95%; */
     }
 
+    /* All 4 Pin fields */
     .pin_field {
         display: flex;
-        gap: .5em;
+        gap: .8em;
+        width: 100%;
+        
+    }
+
+    /* Each Pin field */
+    .pin_put {
+        background-color: var(--base-color);
+        border: var(--text-color) 2px solid;
+        padding: 1em;
+        width: 40px;
+    }
+
+    /* Login Button */
+    .submit {
+        background-color: var(--text-color);
+        color: var(--base-color);
+        border: none;
+        padding: 1em;
+        font-size: 1rem;
     }
 }
 
