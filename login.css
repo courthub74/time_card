@@ -105,5 +105,29 @@ body {
         padding: .5em;
         font-size: 1.2rem;
     }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Input Divs */
+    .input_div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* The Inputs */
+    #name {
+        background-color: var(--base-color);
+        border: var(--text-color) 2px solid;
+        padding: 1em;
+    }
+
+    .pin_field {
+        display: flex;
+        gap: .5em;
+    }
 }
 
