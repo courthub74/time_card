@@ -7,6 +7,7 @@
     --button-color: #181717;
     --button-words: white;
     --primary-color: #3a435d;
+    --theme-switch-backgrd: #9fa4b3;
     --button-two: #131212;
 }
 
@@ -17,6 +18,7 @@
     --button-color: #181717;
     --button-words: white;
     --primary-color: #3a435d; 
+    --theme-switch-backgrd: #15171d;
     --button-two: #131212;
 }
 
@@ -66,6 +68,7 @@ body {
         padding: 0;
         border-radius: 50%;
         border: none;
+        background-color: var(--theme-switch-backgrd);
         /* Sets the Theme Switch button to top right corner */
         position: fixed;
         top: 20px;
@@ -93,8 +96,9 @@ body {
         display: block;
     }
 
-    /* ************************************* */
+    /* ********* */
     /* MAIN PAGE */
+    /* ********* */
     .container {
         /* background-color: blue; */
         font-family: Poppins;
@@ -102,6 +106,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 2em;
+        margin-top: 3em;
     }
 
     /* Header */
@@ -130,7 +135,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 5em;
-        margin: 1em 0 0 0;
+        margin: 2em 0 0 0;
     }
 
     /* The Labels */
@@ -166,7 +171,6 @@ body {
         background-color: var(--base-color);
         border: var(--text-color) 2px solid;
         padding: 1em;
-        width: 40px;
         width: 30px;
         color: var(--text-color);
         font-size: 1rem;
@@ -203,9 +207,156 @@ body {
 
 /* Portrait */
 @media screen and (orientation: portrait) {
-    body {
-        /* display: none; */
-        background-color: blue;
+    
+    /* Nav */
+    #main_nav {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #theme_switch {
+        margin: 0 1em 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--theme-switch-backgrd);
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* NOW set the order of the SVG */
+    #theme_switch svg {
+        fill: var(--primary-color);
+    }
+
+    /* Hide the SVG last child(day mode) */
+    #theme_switch svg:last-child {
+        display: none;
+    }
+
+    /* Invert this for (nite mode) */
+    .darkmode #theme_switch svg:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in (nitemode) */
+    .darkmode #theme_switch svg:last-child {
+        display: block;
+    }
+
+    /* ********* */
+    /* MAIN PAGE */
+    /* ********* */
+    .container {
+        /* background-color: blue; */
+        font-family: Poppins;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 3em;
+    }
+
+    /* Header */
+    .header {
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* App State */
+    .state {
+        background-color: var(--text-color);
+        background-color: var(--button-two);
+        /* Make text match the base */
+        color: var(--button-words);
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        padding: .5em;
+        font-size: 1.2rem;
+    }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        /* margin: 2em 0 0 0; */
+    }
+
+    /* The Labels */
+    label {
+        font-size: 1.2rem;
+    }
+
+    /* Input Divs */
+    .input_div {
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+
+    /* The Inputs */
+    #name {
+        background-color: var(--base-color);
+        border: var(--text-color) 2px solid;
+        padding: .5em;
+        color: var(--text-color);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* All 4 Pin fields */
+    .pin_field {
+        display: flex;
+        gap: .8em;
+        /* background-color: blue; */
+    }
+
+    /* Each Pin field */
+    .pin_put {
+        background-color: var(--base-color);
+        border: var(--text-color) 2px solid;
+        /* width: 42px; */
+        width: 22%;
+        height: 40px;
+        color: var(--text-color);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Remove focus on Input */
+    input:focus {
+        outline: none;
+    }
+
+    /* Login Button */
+    .submit {
+        /* background-color: var(--text-color); */
+        background-color: var(--button-two);
+        color: var(--button-words);
+        border: none;
+        padding: 1em 4em;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    /* Create an Account */
+    .create_acct {
+        text-align: center;
+        color: var(--text-color);
+        font-weight: bold;
     }
 }
 
