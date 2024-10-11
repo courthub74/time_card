@@ -5,6 +5,7 @@
     --base-color: white;
     --text-color: black;
     --button-color: #181717;
+    --button-words: white;
     --primary-color: #3a435d;
 }
 
@@ -13,6 +14,7 @@
     --base-color: #1E1E1E;
     --text-color: white;
     --button-color: #181717;
+    --button-words: white;
     --primary-color: #3a435d; 
 }
 
@@ -96,15 +98,16 @@ body {
     .header {
         color: var(--text-color);
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
     }
 
     /* App State */
     .state {
         background-color: var(--text-color);
+        background-color: var(--button-color);
         /* Make text match the base */
-        color: var(--base-color);
+        color: var(--button-words);
         text-align: center;
         padding: .5em;
         font-size: 1.2rem;
@@ -120,7 +123,7 @@ body {
 
     /* The Labels */
     label {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* Input Divs */
@@ -134,6 +137,8 @@ body {
         background-color: var(--base-color);
         border: var(--text-color) 2px solid;
         padding: 1em;
+        color: var(--text-color);
+        font-size: 1rem;
         /* width: 95%; */
     }
 
@@ -151,15 +156,19 @@ body {
         border: var(--text-color) 2px solid;
         padding: 1em;
         width: 40px;
+        color: var(--text-color);
+        font-size: 1rem;
     }
 
     /* Login Button */
     .submit {
-        background-color: var(--text-color);
-        color: var(--base-color);
+        /* background-color: var(--text-color); */
+        background-color: var(--button-color);
+        color: var(--button-words);
         border: none;
         padding: 1em;
         font-size: 1rem;
+        cursor: pointer;
     }
 }
 
