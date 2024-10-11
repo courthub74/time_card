@@ -20,7 +20,11 @@
     --button-two: #131212;
 }
 
+/* ********** */
+/* ********** */
 /* Whole Page */
+/* ********** */
+/* ********** */
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +41,11 @@ body {
     flex-direction: column;
 }
 
-/* Desktop */
+/* ************** */
+/* ************** */
+/* *** Desktop ** */
+/* ************** */
+/* ************** */
 @media screen and (min-width: 1200px) {
 
     /* Nav */
@@ -90,7 +98,7 @@ body {
     .container {
         /* background-color: blue; */
         font-family: Poppins;
-        /* width: 100%; */
+        width: 20%;
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -100,7 +108,7 @@ body {
     .header {
         color: var(--text-color);
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -110,7 +118,9 @@ body {
         background-color: var(--button-two);
         /* Make text match the base */
         color: var(--button-words);
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
         padding: .5em;
         font-size: 1.2rem;
     }
@@ -119,7 +129,7 @@ body {
     form {
         display: flex;
         flex-direction: column;
-        gap: 3em;
+        gap: 5em;
         margin: 1em 0 0 0;
     }
 
@@ -157,6 +167,7 @@ body {
         border: var(--text-color) 2px solid;
         padding: 1em;
         width: 40px;
+        width: 30px;
         color: var(--text-color);
         font-size: 1rem;
         text-align: center;
@@ -185,8 +196,10 @@ body {
         font-weight: bold;
     }
 }
-
+/* ************* */
 /* MOBILE PHONES */
+/* ************* */
+
 
 /* Portrait */
 @media screen and (orientation: portrait) {
