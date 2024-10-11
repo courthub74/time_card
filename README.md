@@ -7,3 +7,5 @@
 \*Create Account Logins data base
 
 \*Add Registration feature
+
+\*Add Names registered to Name dropdown at login
