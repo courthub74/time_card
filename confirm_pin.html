@@ -14,6 +14,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
     <!-- Navbar -->
     <nav id="main_nav">
         <button id="theme_switch">
@@ -26,54 +27,45 @@
 
     <!-- Main Page -->
     <main class="container">
-
+        
         <div class="header_div">
             <!-- App Title -->
             <p class="header">Time Card</p>
 
             <!-- App State -->
-            <p class="state">Create Account</p>
+            <p class="state">Confirm Pin</p>
         </div>
 
+        <!-- Login Inputs -->
+         <form action="#">
 
-            <form action="#">
+            <!-- Name -->
+            <div class="input_div">
+                <p id="your_name">${Name}</p>
+                <!-- <p class="register_name">Confirm Your Pin #</p> -->
+            </div>
 
-                <!-- Name -->
-                <div class="input_div">
-                    <label for="name">Enter Name:</label>
-                    <input type="text" id="name"/>
+            <!-- Pin # -->
+             <div class="input_div">
+                <label for="pin_num">Confirm Pin #:</label>
+                <div class="pin_field">
+                    <input type="text" class="pin_put" maxlength="1">
+                    <input type="text" class="pin_put" maxlength="1">
+                    <input type="text" class="pin_put" maxlength="1">
+                    <input type="text" class="pin_put" maxlength="1">
                 </div>
+             </div>
 
-                <!-- Pin # -->
-                <div class="input_div">
-                    <label for="pin_num">Set a Pin #:</label>
-                    <div class="pin_field">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                    </div>
-                </div>
+            <!-- Submit Button -->
+             <button class="submit">
+                <a href="#">Confirm</a>
+             </button>
 
-                <!-- Confirm Pin # -->
-                <!-- <div class="input_div">
-                    <label for="pin_num">Confirm Pin #:</label>
-                    <div class="pin_field">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                        <input type="text" class="pin_put" maxlength="1">
-                    </div>
-                </div> -->
+            <!-- Create Account -->
+             <a href="./index.html" class="create_acct">Cancel</a>
 
-                 <!-- Submit Button -->
-                <button class="submit">
-                    <a href="./confirm_pin.html">Submit</a>
-                </button>
+         </form>
 
-                <!-- Back Link -->
-                <a href="./index.html" class="create_acct">Go Back</a>
-            </form>
     </main>
     
 </body>
