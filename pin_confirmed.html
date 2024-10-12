@@ -33,36 +33,25 @@
             <p class="header">Time Card</p>
 
             <!-- App State -->
-            <p class="state">Confirm Pin</p>
+            <p class="state">Pin Confirmed</p>
         </div>
 
         <!-- Login Inputs -->
          <form action="#">
 
-            <!-- Name -->
-            <div class="input_div">
-                <p id="your_name">${Name}</p>
-                <!-- <p class="register_name">Confirm Your Pin #</p> -->
-            </div>
-
-            <!-- Pin # -->
-             <div class="input_div">
-                <label for="pin_num">Confirm Pin #:</label>
-                <div class="pin_field">
-                    <input type="text" class="pin_put" maxlength="1">
-                    <input type="text" class="pin_put" maxlength="1">
-                    <input type="text" class="pin_put" maxlength="1">
-                    <input type="text" class="pin_put" maxlength="1">
-                </div>
+            <!-- Your Pin -->
+             <div class="pin_div">
+                <p>${Name} Your Pin # is:</p>
+                <p id="pin_displayed">${1 2 3 4}</p>
              </div>
 
             <!-- Submit Button -->
              <button class="submit">
-                <a href="./pin_confirmed.html">Confirm</a>
+                <a href="./acct_type.html">Next</a>
              </button>
 
             <!-- Create Account -->
-             <a href="./index.html" class="create_acct">Cancel</a>
+             <a href="./create_acct.html" class="create_acct">Create an Account</a>
 
          </form>
 

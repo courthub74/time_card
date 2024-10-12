@@ -16,10 +16,12 @@
     --base-color: #1E1E1E;
     --text-color: white;
     --button-color: #181717;
+    /* --button-color: #393636; */
     --button-words: white;
     --primary-color: #3a435d; 
     --theme-switch-backgrd: #15171d;
     --button-two: #131212;
+    /* --button-two: #393636; */
 }
 
 /* ********** */
@@ -119,7 +121,7 @@ body {
 
     /* App State */
     .state {
-        background-color: var(--text-color);
+        /* background-color: var(--text-color); */
         background-color: var(--button-two);
         /* Make text match the base */
         color: var(--button-words);
@@ -136,6 +138,15 @@ body {
         flex-direction: column;
         gap: 5em;
         margin: 2em 0 0 0;
+    }
+
+    /* Your Pin */
+    .pin_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     /* The Labels */
@@ -312,6 +323,17 @@ body {
         /* margin: 2em 0 0 0; */
     }
 
+     /* Your Pin */
+     .pin_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        gap: 7em;
+        
+    }
+
     /* The Labels */
     label {
         font-size: 1.2rem;
@@ -322,6 +344,13 @@ body {
         display: flex;
         flex-direction: column;
         /* background-color: blue; */
+    }
+
+      /* Registered Name */
+    #your_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
     }
 
     /* Registered Name */
@@ -491,11 +520,12 @@ body {
         flex-direction: column;
         /* background-color: blue; */
     }
-
-    /* Registered Name */
-    #your_name {
-
-    }
+  /* Registered Name */
+  #your_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
 
     /* The Inputs */
     #name {
