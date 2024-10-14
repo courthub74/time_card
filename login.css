@@ -175,12 +175,14 @@ body {
     #dropdown_btn {
         background-color: var(--base-color);
         color: white;
-        padding: 1.5em;
+        padding: 1em;
         width: 100%;
         /* padding: 16px; */
         font-size: 16px;
         border: 1px solid var(--text-color);
         cursor: pointer;
+        display: flex;
+        justify-content: right;
     }
 
     /* Name List */
