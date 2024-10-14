@@ -136,8 +136,9 @@ body {
     form {
         display: flex;
         flex-direction: column;
-        gap: 5em;
-        margin: 2em 0 0 0;
+        gap: 3em;
+        /* margin: 2em 0 0 0; */
+        /* background-color: blue; */
     }
 
     /* Your Pin */
@@ -147,6 +148,7 @@ body {
         align-items: center;
         font-size: 1.5rem;
         font-weight: bold;
+        gap: 4em;
     }
 
     /* The Labels */
@@ -159,6 +161,43 @@ body {
         display: flex;
         flex-direction: column;
         /* align-items: center; */
+    }
+
+     /* NAME LOGIN LIST */
+
+    /* Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Button */
+    #dropdown_btn {
+        background-color: var(--base-color);
+        color: white;
+        padding: 1.5em;
+        width: 100%;
+        /* padding: 16px; */
+        font-size: 16px;
+        border: 1px solid var(--text-color);
+        cursor: pointer;
+    }
+
+    /* Name List */
+    .name_list {
+        display: none;
+        position: absolute;
+        background-color: var(--primary-color);
+        min-width: 160px;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        z-index: 1;
+        color: var(--button-words);
+    }
+
+    .name_and_pin {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
     }
 
      /* Registered Name */
@@ -185,14 +224,14 @@ body {
     /* All 4 Pin fields */
     .pin_field {
         display: flex;
-        gap: .8em;
+        gap: 1.1em;
         width: 100%;
     }
 
     /* Each Pin field */
     .pin_put {
         background-color: var(--base-color);
-        border: var(--text-color) 2px solid;
+        border: var(--text-color) 1px solid;
         padding: 1em;
         width: 30px;
         color: var(--text-color);
@@ -292,6 +331,7 @@ body {
         flex-direction: column;
         gap: 2em;
         margin-top: 3em;
+        
     }
 
     /* Header */
@@ -321,6 +361,24 @@ body {
         flex-direction: column;
         gap: 4em;
         /* margin: 2em 0 0 0; */
+    } 
+
+    /* NAME LOGIN LIST */
+
+    /* Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Button */
+    .dropdown_btn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
     }
 
      /* Your Pin */
@@ -328,9 +386,10 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        gap: 7em;
+        /* gap: 7em; */
+        gap: 5em;
         
     }
 
@@ -344,6 +403,12 @@ body {
         display: flex;
         flex-direction: column;
         /* background-color: blue; */
+    }
+
+    .name_and_pin {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
     }
 
       /* Registered Name */

@@ -42,7 +42,19 @@
             <!-- Name -->
             <div class="input_div">
                 <label for="name">Name:</label>
-                <input type="text" id="name"/>
+                <!-- <input type="text" id="name"/> -->
+                <!-- The Name will be read from the DB -->
+                 <!-- On a dropdown -->
+                <div class="dropdown">
+                    <button id="dropdown_btn">
+                        <div class="name_list">
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                        </div>
+                    </button>
+                </div>
             </div>
 
             <!-- Pin # -->
@@ -56,13 +68,15 @@
                 </div>
              </div>
 
-            <!-- Submit Button -->
-             <button class="submit">Submit</button>
-
-            <!-- Create Account -->
-             <a href="./create_acct.html" class="create_acct">Create an Account</a>
+            
 
          </form>
+
+         <!-- Submit Button -->
+         <button class="submit">Submit</button>
+
+         <!-- Create Account -->
+          <a href="./create_acct.html" class="create_acct">Create an Account</a>
 
     </main>
     
