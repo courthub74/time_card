@@ -42,27 +42,43 @@
             <!-- Name -->
             <div class="input_div">
                 <label for="name">Name:</label>
-                <input type="text" id="name"/>
+                <!-- <input type="text" id="name"/> -->
+                <!-- The Name will be read from the DB -->
+                 <!-- On a dropdown -->
+                <div class="dropdown">
+                    <button id="dropdown_btn" class=".dropdown_btn">
+                        <div class="name_list" id="name_list">
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                            <p>Last, First</p>
+                        </div>
+                        <!-- The Arrow -->
+                        <img src="./img/down-arrow.png" alt="arrow">
+                    </button>
+                </div>
             </div>
 
             <!-- Pin # -->
              <div class="input_div">
                 <label for="pin_num">Pin #:</label>
                 <div class="pin_field">
-                    <input type="text" class="pin_put" maxlength="1">
+                    <input type="text" class="pin_put" maxlength="4">
                     <input type="text" class="pin_put" maxlength="1">
                     <input type="text" class="pin_put" maxlength="1">
                     <input type="text" class="pin_put" maxlength="1">
                 </div>
              </div>
 
-            <!-- Submit Button -->
-             <button class="submit">Submit</button>
-
-            <!-- Create Account -->
-             <a href="./create_acct.html" class="create_acct">Create an Account</a>
+            
 
          </form>
+
+         <!-- Submit Button -->
+         <button class="submit">Submit</button>
+
+         <!-- Create Account -->
+          <a href="./create_acct.html" class="create_acct">Create an Account</a>
 
     </main>
     
@@ -70,4 +86,7 @@
 
     <!-- DARKMODE JS -->
     <script src="darkmode.js"></script>
+
+    <!-- DROPDOWN JS -->
+     <script src="names_drop.js"></script>
 </html>
