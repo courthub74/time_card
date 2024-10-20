@@ -171,7 +171,7 @@ body {
         display: inline-block;
     }
 
-    /* Dropdown Button */
+    /* Dropdown Button (The Select) */
     #dropdown_btn {
         background-color: var(--base-color);
         /* background-color: blue; */
@@ -185,6 +185,18 @@ body {
         display: flex;
         justify-content: right;
     }
+    
+    /* Style the arrow inside the select element: */
+    /* #dropdown_btn:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    } */
 
     /* Down Arrow */
     img {
@@ -391,13 +403,16 @@ body {
         display: inline-block;
     }
 
-    /* Dropdown Button */
-    .dropdown_btn {
+    /* Dropdown Button (The Select) */
+    #dropdown_btn {
         background-color: #3498DB;
+        background-color: var(--base-color);
+        border: 1px solid var(--text-color);
         color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
+        padding: .8em;
+        width: 100%;
+        /* padding: 16px; */
+        font-size: 14px;
         cursor: pointer;
     }
 
