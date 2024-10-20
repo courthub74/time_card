@@ -408,7 +408,7 @@ body {
         background-color: #3498DB;
         background-color: var(--base-color);
         border: 1px solid var(--text-color);
-        color: white;
+        color: var(--text-color);
         padding: 1em;
         width: 100%;
         /* padding: 16px; */
@@ -425,7 +425,6 @@ body {
         font-weight: bold;
         /* gap: 7em; */
         gap: 5em;
-        
     }
 
     /* The Labels */
@@ -609,6 +608,36 @@ body {
         /* margin: 2em 0 0 0; */
     }
 
+    /* Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Button (The Select) */
+    #dropdown_btn {
+        background-color: #3498DB;
+        background-color: var(--base-color);
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+        padding: 1em;
+        width: 100%;
+        /* padding: 16px; */
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+     /* Your Pin */
+     .pin_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* gap: 7em; */
+        gap: 5em;
+    }
+
     /* The Labels */
     label {
         font-size: 1.2rem;
@@ -620,12 +649,13 @@ body {
         flex-direction: column;
         /* background-color: blue; */
     }
-  /* Registered Name */
-  #your_name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
+
+    /* Registered Name */
+    #your_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
 
     /* The Inputs */
     #name {
@@ -647,7 +677,7 @@ body {
     /* Each Pin field */
     .pin_put {
         background-color: var(--base-color);
-        border: var(--text-color) 2px solid;
+        border: var(--text-color) 1px solid;
         /* width: 42px; */
         width: 22%;
         height: 40px;
