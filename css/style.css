@@ -1,0 +1,76 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noticia+Text&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@500;700;900&family=Satisfy&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+
+/* CSS Variables */
+
+/* The Root (Day Mode) */
+:root {
+    /* Base */
+    --base-color: white;
+    --text-color: #031406;
+
+    /* Buttons */
+    --button-background: #031406;
+    --button-text: white;
+
+    /* Inputs */
+    --input-background: #D9D9D9;
+
+    /* Trims */
+    --trim-color: #031406;
+
+    /* Day/Nite */
+    --backcircle: #D9D9D9;
+}
+
+/* Darkmode (Nite Mode) */
+.darkmode {
+    /* Base */
+    --base-color: #031406;
+    --text-color: white;
+
+    /* Buttons */
+    --button-background: #0A310F;
+    --button-text: white;
+
+    /* Inputs */
+    --input-background: #031406;
+
+    /* Trim */
+    --trim-color:#0A310F;
+
+    /* Day/Nite */
+    --backcircle: #061A08;
+}
+
+/* ********** */
+/* ********** */
+/* Whole Page */
+/* ********** */
+/* ********** */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body for All */
+body {
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
