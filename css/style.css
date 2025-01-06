@@ -117,4 +117,37 @@ body {
     .darkmode #theme_switch .day_nite_logos img:last-child {
         display: block;
     }
+
+
+    /* Header */
+    .header_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Time Card Logo Div */
+    .header_logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Time Card Logo Display order */
+
+    /* NOW set the order of the IMGs in the Logo header */
+    .header_logos img:last-child {
+        display: none;
+    }
+
+    /* Invert this for nite mode */
+    .darkmode .header_logos img:first-child {
+        display: none;
+    }
+
+    /* Make the Last child visible in the nite mode */
+    .darkmode .header_logos img:last-child {
+        display: block;
+    }
 }
