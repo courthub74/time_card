@@ -88,14 +88,33 @@ body {
     #theme_switch {
         margin: 0 2em 0 2em;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
         border: none;
         background-color: var(--theme-switch-background);
+        height: 90px;
+        width: 90px;
+        padding: 0;
         position: fixed;
         top: 20px;
         right: 20px;
         cursor: pointer;
+    }
+
+    /* NOW set the order of the IMG in the nite/day button */
+    #theme_switch .day_nite_logos img:last-child {
+        display: none;
+    }
+
+    /* Invert this for nite mode */
+    .darkmode #theme_switch .day_nite_logos img:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in nite mode */
+    .darkmode #theme_switch .day_nite_logos img:last-child {
+        display: block;
     }
 }
