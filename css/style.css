@@ -20,7 +20,7 @@
     --trim-color: #031406;
 
     /* Day/Nite */
-    --backcircle: #D9D9D9;
+    --theme-switch-background: #D9D9D9;
 }
 
 /* Darkmode (Nite Mode) */
@@ -40,7 +40,7 @@
     --trim-color:#0A310F;
 
     /* Day/Nite */
-    --backcircle: #061A08;
+    --theme-switch-background: #061A08;
 }
 
 /* ********** */
@@ -68,9 +68,34 @@ body {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+
+    /* Container */
     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Nav */
+    .main_nav {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    /* Theme Switch Button */
+    #theme_switch {
+        margin: 0 2em 0 2em;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--theme-switch-background);
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
     }
 }
