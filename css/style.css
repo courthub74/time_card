@@ -13,6 +13,10 @@
     --button-background: #031406;
     --button-text: white;
 
+    /* App State Colors */
+    --app-state-background: #56645B;
+    --app-state-trim: #061A08;
+
     /* Inputs */
     --input-background: #D9D9D9;
 
@@ -32,6 +36,10 @@
     /* Buttons */
     --button-background: #0A310F;
     --button-text: white;
+
+    /* App State Colors */
+    --app-state-background: #031406;
+    --app-state-trim: #3A603A;
 
     /* Inputs */
     --input-background: #031406;
@@ -63,6 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Poppins';
 }
 
 
@@ -149,5 +158,17 @@ body {
     /* Make the Last child visible in the nite mode */
     .darkmode .header_logos img:last-child {
         display: block;
+    }
+
+
+    /* App State */
+    .app_state {
+        background-color: var(--app-state-background);
+        border: 2px solid var(--button-background);
+        color: white;
+        padding: .5em 3em;
+        width: 60%;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
