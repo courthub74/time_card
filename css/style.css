@@ -17,11 +17,16 @@
     --app-state-background: #56645B;
     --app-state-trim: #061A08;
 
+    /* Form Colors */
+    --form-background: #56645B;
+    --form-trim: #031406;
+
     /* Inputs */
     --input-background: #D9D9D9;
+    --input-trim: #031406;
 
     /* Trims */
-    --trim-color: #031406;
+    /* --trim-color: #031406; */
 
     /* Day/Nite */
     --theme-switch-background: #D9D9D9;
@@ -41,11 +46,16 @@
     --app-state-background: #031406;
     --app-state-trim: #3A603A;
 
+    /* Form Colors */
+    --form-background: #081309;
+    --form-trim: #3A603A;
+
     /* Inputs */
     --input-background: #031406;
+    --input-trim: #0A310F;
 
     /* Trim */
-    --trim-color:#0A310F;
+    /* --trim-color:#3A603A; */
 
     /* Day/Nite */
     --theme-switch-background: #061A08;
@@ -84,6 +94,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 3em;
+        /* background-color: blue; */
+        width: 100%;
     }
 
     /* Nav */
@@ -134,6 +147,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* background-color: yellow; */
+        width: 100%;
     }
 
     /* Time Card Logo Div */
@@ -141,6 +156,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Time Card Logo */
+    .time_card_logo {
+        width: 21em;
+        height: 4em;
     }
 
     /* Time Card Logo Display order */
@@ -164,11 +185,151 @@ body {
     /* App State */
     .app_state {
         background-color: var(--app-state-background);
-        border: 2px solid var(--button-background);
+        border: 2px solid var(--app-state-trim);
         color: white;
-        padding: .5em 3em;
-        width: 60%;
+        padding: .3em 2em;
+        width: 13%;
         text-align: center;
         font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+        border: 2px solid var(--form-trim);
+        background-color: var(--form-background);
+        width: 25%;
+        padding: 3em 3em;
+        border-radius: 5px;
+        font-family: 'Poppins';
+        font-size: 1.2rem;
+        /* margin-top: 3em; */
+    }
+
+    /* Labels */
+    label {
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 1.1rem;
+        /* font-weight: bold; */
+    }
+
+    /* Input Divs */
+    .input_div {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        width: 100%;
+    }
+
+    /* Dropdown for Login Members */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        /* border: 1px solid var(--button-background); */
+        border-radius: 5px;
+    }
+
+    /* The Dropdown Button (The Select) */
+    #dropdown_btn {
+        background-color: var(--input-background);
+        border: none;
+        border: 1px solid var(--button-background);
+        border-radius: 5px;
+        color: var(--text-color);
+        padding: 2em 1em;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: right;
+    }
+
+    /* Name List */
+    .name_list {
+        display: none;
+        position: absolute;
+        background-color: var(--input-background);
+        z-index: 1;
+        color: var(--text-color);
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .name_list.show {
+        display: block;
+    }
+
+    /* Pin # */
+    /* .name_and_pin {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    } */
+
+    /* Pin Field */
+    .pin_field {
+        display: flex;
+        gap: .8vw;
+        gap: 1.5em;
+        width: 100%;
+    }
+
+    /* Each Pin Field */
+    .pin_put {
+        border: 1px solid var(--input-trim);
+        background-color: var(--input-background);
+        border-radius: 5px;
+        height: 4em;
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--text-color);
+        width: 100%;
+    }
+
+    /* Remove focus on Input */
+    input:focus {
+        outline: none;
+    }
+
+    /* Reset the Form Button */
+    .reset_button {
+        margin: 1em 0 0 0;
+        background-color: var(--form-background);
+        border: 1px solid var(--text-color);
+        border: none;
+        border-radius: 5px;
+        color: var(--text-color);
+        padding: .3em;
+        /* font-weight: bold; */
+        font-family: 'Poppins';
+        font-size: .8rem;
+    }
+
+    /* Submit Button */
+    .submit {
+        width: 100%;
+        background-color: var(--button-background);
+        color: var(--button-text);
+        border: none;
+        border-radius: 5px;
+        padding: 1em;
+        font-weight: bold;
+        font-family: 'Poppins';
+        cursor: pointer;
+        font-size: .9rem;
+    }
+
+    /* Create Account */
+    .create_acct {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 1rem;
+        font-weight: bold;
     }
 }

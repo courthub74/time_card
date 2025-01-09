@@ -14,6 +14,7 @@
      <div class="container">
 
         <!-- Navbar -->
+         <!-- Fixed to the top right corner -->
         <nav class="main_nav">
             <button id="theme_switch">
                 <!-- Day/Nite -->
@@ -31,14 +32,55 @@
 
             <!-- Day/Nite Logos -->
              <div class="header_logos">
-                <img src="../img/time-card-logos/Litemode.png" alt="time_card">
-                <img src="../img/time-card-logos/Darkmode.png" alt="time_card">
+                <img src="../img/time-card-logos/Litemode.png" class="time_card_logo" alt="time_card">
+                <img src="../img/time-card-logos/Darkmode.png" class="time_card_logo" alt="time_card">
              </div>
 
              <!-- App State -->
              <p class="app_state">Login</p>
 
          </div>
+
+         <!-- Form -->
+         <form id="login_form">
+
+            <!-- Name -->
+             <div class="input_div">
+                <label for="name">Name:</label>
+                <!-- Input Below -->
+                 <div class="dropdown">
+                    <select id="dropdown_btn" class="dropdown_btn">
+                        <!-- The Names logged into the database from here -->
+                        <option value="#">Select:</option>
+                        <!-- EACH Value WILL BE READ FROM THE DB -->
+                        <option value="Lastname, One">Lastname, Onename</option>
+                        <option value="Lastname, Two">Lastname, Twoname</option>
+                        <option value="Lastname, Three">Lastname, Threename</option>
+                        <option value="Lastname, Four">Lastname, Fourname</option>
+                        <option value="Lastname, Five">Lastname, Fivename</option>
+                    </select>
+                 </div>
+             </div>
+
+              <!-- Pin # -->
+              <div class="input_div">
+                <label for="pin_num">Pin:</label>
+                    <div class="pin_field" id="pin_field">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                    </div>
+                    <!-- Reset Pins Button -->
+                     <button class="reset_button" id="reset_button">Clear the Pin Number</button>
+              </div>
+
+               <!-- Submit Button -->
+               <button class="submit" id="submit_login">Submit</button>
+
+               <!-- Create Account -->
+               <a href="../html/create_acct.html" class="create_acct">Create an Account</a>
+         </form>
      </div>
     
 </body>
