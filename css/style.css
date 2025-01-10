@@ -86,12 +86,57 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 800px) {
-    body {
-        background-color: var(--base-color);
-    }
+
     /* Container */
     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        /* background-color: blue; */
+        width: 50%;
+    }
+
+   /* Nav */
+   #main_nav {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    /* Theme Switch Buttons */
+    #theme_switch {
+        margin: 0 2em 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--theme-switch-backgrd);
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* NOW set the order of the IMG in the nite/day button */
+    #theme_switch .day_nite_logos img:last-child {
         display: none;
+    }
+
+    /* Invert this for nite mode */
+    .darkmode #theme_switch .day_nite_logos img:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in nite mode */
+    .darkmode #theme_switch .day_nite_logos img:last-child {
+        display: block;
     }
 }
 
