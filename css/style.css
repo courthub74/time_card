@@ -84,6 +84,17 @@ body {
     font-family: 'Poppins';
 }
 
+/* Mobile */
+@media screen and (max-width: 800px) {
+    body {
+        background-color: var(--base-color);
+    }
+    /* Container */
+    .container {
+        display: none;
+    }
+}
+
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
@@ -238,7 +249,7 @@ body {
     #dropdown_btn {
         background-color: var(--input-background);
         border: none;
-        border: 1px solid var(--button-background);
+        border: 2px solid var(--button-background);
         border-radius: 5px;
         color: var(--text-color);
         padding: 2em 1em;
@@ -280,7 +291,7 @@ body {
 
     /* Each Pin Field */
     .pin_put {
-        border: 1px solid var(--input-trim);
+        border: 2px solid var(--input-trim);
         background-color: var(--input-background);
         border-radius: 5px;
         height: 4em;
@@ -305,7 +316,7 @@ body {
         border-radius: 5px;
         color: var(--text-color);
         padding: .3em;
-        /* font-weight: bold; */
+        cursor: pointer;
         font-family: 'Poppins';
         font-size: .8rem;
     }
