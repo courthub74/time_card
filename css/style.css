@@ -87,17 +87,6 @@ body {
 /* Mobile */
 @media screen and (max-width: 800px) {
 
-    /* Container */
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3em;
-        /* background-color: blue; */
-        width: 50%;
-    }
-
    /* Nav */
    #main_nav {
         width: 100%;
@@ -137,6 +126,51 @@ body {
     /* Make Last child visible in nite mode */
     .darkmode #theme_switch .day_nite_logos img:last-child {
         display: block;
+    }
+
+    /* Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        /* background-color: blue; */
+        width: 50%;
+    }
+
+    /* Header Div */
+    .header_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 50%; */
+    }
+
+    /* Time Card Logo Div */
+    /* .header_logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    /* Time Card Logo */
+    .time_card_logo {
+        width: 16em;
+        height: 3em;
+    }
+
+
+    /* App State */
+    .app_state {
+        background-color: var(--app-state-background);
+        border: 2px solid var(--app-state-trim);
+        color: white;
+        padding: .3em 2em;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 5px;
     }
 }
 
