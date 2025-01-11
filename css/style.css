@@ -264,7 +264,43 @@ body {
 
     /* Pin Field */
     .pin_field {
-        
+        display: flex;
+        gap: .7em;
+        /* gap: 1.5em; */
+        width: 100%;
+        /* background-color: blanchedalmond; */
+    }
+
+    /* Each Pin Field */
+    .pin_put {
+        border: 2px solid var(--input-trim);
+        background-color: var(--input-background);
+        border-radius: 5px;
+        height: 2.2em;
+        width: 2.2em;
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    /* Remove focus on Input */
+    input:focus {
+        outline: none;
+    }
+
+    /* Reset the Form Button */
+    .reset_button {
+        margin: 1em 0 0 0;
+        background-color: var(--form-background);
+        border: 1px solid var(--text-color);
+        border: none;
+        border-radius: 5px;
+        color: var(--text-color);
+        padding: .3em;
+        cursor: pointer;
+        font-family: 'Poppins';
+        font-size: .8rem;
     }
 }
 
