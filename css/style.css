@@ -82,6 +82,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Poppins';
+    /* background-color: blue; */
 }
 
 /* Mobile */
@@ -109,8 +110,13 @@ body {
         /* Sets the Theme Switch button to top right corner */
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 10px;
         cursor: pointer;
+    }
+
+    #theme_switch img {
+        height: 40px;
+        width: 40px;
     }
 
     /* NOW set the order of the IMG in the nite/day button */
@@ -135,7 +141,6 @@ body {
         justify-content: center;
         align-items: center;
         gap: 3em;
-        /* background-color: blue; */
         width: 50%;
     }
 
@@ -149,16 +154,33 @@ body {
     }
 
     /* Time Card Logo Div */
-    /* .header_logos {
+    .header_logos {
         display: flex;
         justify-content: center;
         align-items: center;
-    } */
+    }
 
     /* Time Card Logo */
     .time_card_logo {
-        width: 16em;
-        height: 3em;
+        width: 13em;
+        height: 2.5em;
+    }
+
+    /* Time Card Logo Display order */
+
+    /* NOW set the order of the IMGs in the Logo header */
+    .header_logos img:last-child {
+        display: none;
+    }
+
+    /* Invert this for nite mode */
+    .darkmode .header_logos img:first-child {
+        display: none;
+    }
+
+    /* Make the Last child visible in the nite mode */
+    .darkmode .header_logos img:last-child {
+        display: block;
     }
 
 
@@ -167,10 +189,82 @@ body {
         background-color: var(--app-state-background);
         border: 2px solid var(--app-state-trim);
         color: white;
-        padding: .3em 2em;
+        padding: .3em 4em;
         text-align: center;
         font-size: 1.1rem;
         border-radius: 5px;
+    }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+        border: 2px solid var(--form-trim);
+        background-color: var(--form-background);
+        width: 80%;
+        padding: 2em 3em;
+        border-radius: 5px;
+        font-family: 'Poppins';
+        font-size: 1.2rem;
+    }
+
+    /* Labels */
+    label {
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 1.1rem;
+    }
+
+    /* Input Divs */
+    .input_div {
+        display: flex;
+        flex-direction: column;  
+        gap: .5em;
+        /* width: 100%; */
+    }
+
+    /* Dropdown for Login Members */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* The Dropdown Button (The Select) */
+    #dropdown_btn {
+        background-color: var(--input-background);
+        border: none;
+        border: 2px solid var(--button-background);
+        border-radius: 5px;
+        color: var(--text-color);
+        padding: .6em;
+        width: 15em;
+        cursor: pointer;
+        display: flex;
+        /* justify-content: left; */
+    }
+
+    /* Name List */
+    .name_list {
+        display: none;
+        position: absolute;
+        background-color: var(--input-background);
+        z-index: 1;
+        color: var(--text-color);
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    /* Look up how to set colors of select dropdown */
+    .name_list.show {
+        border: 1px solid var(--input-trim);
+    }
+
+    /* Pin Field */
+    .pin_field {
+        
     }
 }
 
@@ -321,7 +415,6 @@ body {
         position: relative;
         display: inline-block;
         /* border: 1px solid var(--button-background); */
-        border-radius: 5px;
     }
 
     /* The Dropdown Button (The Select) */
