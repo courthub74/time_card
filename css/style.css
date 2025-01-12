@@ -162,8 +162,8 @@ body {
 
     /* Time Card Logo */
     .time_card_logo {
-        width: 13em;
-        height: 2.5em;
+        width: 15em;
+        height: 3em;
     }
 
     /* Time Card Logo Display order */
@@ -189,7 +189,7 @@ body {
         background-color: var(--app-state-background);
         border: 2px solid var(--app-state-trim);
         color: white;
-        padding: .3em 4em;
+        padding: .3em 5em;
         text-align: center;
         font-size: 1.1rem;
         border-radius: 5px;
@@ -203,7 +203,7 @@ body {
         gap: 2.5em;
         border: 2px solid var(--form-trim);
         background-color: var(--form-background);
-        width: 80%;
+        width: 90%;
         padding: 2em 3em;
         border-radius: 5px;
         font-family: 'Poppins';
@@ -276,7 +276,7 @@ body {
         border: 2px solid var(--input-trim);
         background-color: var(--input-background);
         border-radius: 5px;
-        height: 2.2em;
+        height: 2.4em;
         width: 2.2em;
         position: relative;
         font-size: 1rem;
@@ -301,6 +301,29 @@ body {
         cursor: pointer;
         font-family: 'Poppins';
         font-size: .8rem;
+    }
+
+    /* Submit Button */
+    .submit {
+        width: 100%;
+        background-color: var(--button-background);
+        color: var(--button-text);
+        border: none;
+        border-radius: 5px;
+        padding: .7em 1em;
+        font-weight: bold;
+        font-family: 'Poppins';
+        cursor: pointer;
+        font-size: .9rem;
+    }
+
+    /* Create Account */
+    .create_acct {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: .8rem;
+        font-weight: bold;
     }
 }
 
